@@ -4,8 +4,8 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "bun --bun run next dev",
-    "build": "bun --bun run next build",
+    "dev": "bun run --bun next dev",
+    "build": "bun run --bun next build",
     "start": "next start",
     "lint": "eslint",
     "format": "prettier --write \"**/*.{ts,tsx}\"",
