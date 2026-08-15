@@ -1,13 +1,14 @@
-import CalculatorHandleKey from "@/components/calculator/handle-key";
+import CalculatorInput from "@/components/calculator/input";
+import CalculatorResult from "@/components/calculator/result";
 import { CalculatorRoot } from "@/components/calculator/root";
-import React from "react";
 
 export default function Page() {
   return (
     <CalculatorRoot>
       <main className="flex h-dvh flex-col items-center">
-        <CalculatorHandleKey />
-        <div className="flex-1 overflow-y-auto">top</div>
+        <CalculatorInput />
+        <CalculatorResult />
+        <div className="flex-1 overflow-y-auto"></div>
         <div className="p-2">
           <div>Symbols</div>
           <div>nuumber</div>
