@@ -1,21 +1,23 @@
-# shadcn/ui monorepo template
+# Calculator
 
-This is a Next.js monorepo template with shadcn/ui.
+## ToDos
 
-## Adding components
+1. Implement a textbox to write math expression.
+2. Create keypad (as floating window).
+3. Math expression can be save as variable and function to create a table.
 
-To add components to your app, run the following command at the root of your `web` app:
+```c
+x1 = 100
+x2 = 10 * 3
+x3 = x1 + x2
 
-```bash
-pnpm dlx shadcn@latest add button -c apps/web
-```
-
-This will place the ui components in the `packages/ui/src/components` directory.
-
-## Using components
-
-To use the components in your app, import them from the `ui` package.
-
-```tsx
-import { Button } from "@workspace/ui/components/button";
+f(x) = x + 2; -10 <= x <= 10
+===================
+|   x   |   f(x)  |
+|=======|=========|
+|  -10  |   -8    |
+|  -9   |   -7    |
+|  ...  |   ...   |
+|   10  |   12    |
+===================
 ```
